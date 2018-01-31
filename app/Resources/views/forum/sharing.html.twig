@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container" style="margin-top:100px">
+
+  <div id="block-part">
+    <div class="headline">
+      <h2>Making</h2>
+      <p>Tout le savoir faire des Making RPG</p>
+    </div>
+
+    {% for topicShare in topicShare %}
+    <div class="block">
+      <h3><a href="/presentation/{{topicShare.id}}">{{ topicShare.Subject }}</a></h3>
+      <p class="date-author">Par {{ topicShare.author }} le {{ topicShare.date|date('Y-m-d') }}</p>
+    </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endblock %}

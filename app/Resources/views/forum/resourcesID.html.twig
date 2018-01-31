@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container" style="margin-top:100px">
+
+  <div id="block-part">
+    <div class="headline">
+      <h3>{{ idRes.Subject }}</a></h3>
+    </div>
+
+      <div class="block-topic clearfix">
+        <div class="col-md-4">
+          <h5>{{ idRes.author }}</h5>
+        </div>
+        <div class="col-md-8">
+          <p class="date-author">{{ idRes.date|date('Y-m-d') }}</p>
+          <p>{{ idRes.text }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="response">
+
+    </div>
+  </div>
+{% endblock %}

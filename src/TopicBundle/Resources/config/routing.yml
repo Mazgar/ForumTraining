@@ -1,0 +1,51 @@
+topic_homepage:
+    path:     /
+    defaults: { _controller: TopicBundle:Default:index }
+
+topic_presentation:
+    path:    /presentation
+    defaults: {_controller: TopicBundle:Topic:presentation }
+
+topic_presentation_id:
+    path:    /presentation/{id}
+    defaults: { _controller:TopicBundle:Topic:presentationId }
+
+topic_news:
+    path:    /news
+    defaults: { _controller:TopicBundle:Topic:news }
+
+topic_news_id:
+    path:    /news/{id}
+    defaults: { _controller:TopicBundle:Topic:newsID }
+
+topic_rules:
+    path:    /rules
+    defaults: { _controller:TopicBundle:Topic:rules }
+
+topic_rules_id:
+    path:    /rules/{id}
+    defaults: { _controller:TopicBundle:Topic:rulesID }
+
+topic_tuto:
+    path:    /tuto
+    defaults: { _controller:TopicBundle:Topic:tuto }
+
+topic_tuto_id:
+    path:    /tuto/{id}
+    defaults: { _controller:TopicBundle:Topic:tutoID }
+
+topic_resources:
+    path:    /resources
+    defaults: { _controller:TopicBundle:Topic:resources }
+
+topic_resources_id:
+    path:    /resources
+    defaults: { _controller:TopicBundle:Topic:resourcesID }
+
+topic_sharing:
+    path:    /sharing
+    defaults: { _controller:TopicBundle:Topic:sharing }
+
+topic_sharing_id:
+    path:    /sharing/{id}
+    defaults: { _controller:TopicBundle:Topic:sharingID }

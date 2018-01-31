@@ -1,0 +1,18 @@
+/*------------
+Page index
+-----------*/
+
+.headline {
+  background:black;
+  color:white;
+  padding:8px;
+}
+
+.block {
+    border-bottom: 1px solid black;
+}
+
+.block-topic {
+  margin-top:20px;
+    border-bottom: 1px solid black;
+}

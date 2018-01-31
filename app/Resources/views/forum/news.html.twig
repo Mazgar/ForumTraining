@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container" style="margin-top:100px">
+
+  <div id="block-part">
+    <div class="headline">
+      <h2>Communauté</h2>
+      <p>Tous les événement liés à la communauté c'est ici, présentez vous d'abord</p>
+    </div>
+
+    {% for topicNews in topicNews %}
+    <div class="block">
+      <h3><a href="/presentation/{{topicNews.id}}">{{ topicNews.Subject }}</a></h3>
+      <p class="date-author">Par {{ topicNews.author }} le {{ topicNews.date|date('Y-m-d') }}</p>
+    </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endblock %}
